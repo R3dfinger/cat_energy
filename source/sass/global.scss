@@ -1,0 +1,27 @@
+html,
+body {
+    min-width: 320px;
+
+    font-style: normal;
+
+    @include text();
+    font-family: $font;
+    color: $color-text;
+
+    background-color: #fff;
+}
+// Это хорошая пркатика для IMG
+img {
+    max-width: 100%;
+    height: auto;
+  }
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}

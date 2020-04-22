@@ -1,0 +1,39 @@
+{
+  "name": "cat_energy",
+  "version": "1.0.0",
+  "description": "cat_energy-site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/R3dfinger/cat_energy.git"
+  },
+  "author": "Sokki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/R3dfinger/cat_energy/issues"
+  },
+  "homepage": "https://github.com/R3dfinger/cat_energy#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.7.4",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-csso": "^4.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-posthtml": "^3.0.4",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-svgstore": "^7.0.1",
+    "gulp-uglify": "^3.0.2",
+    "posthtml-include": "^1.4.1"
+  },
+  "dependencies": {
+    "del": "^5.1.0",
+    "gulp-htmlmin": "^5.0.1"
+  }
+}
