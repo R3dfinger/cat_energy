@@ -1,0 +1,27 @@
+.site-list {
+    @include list-reset();
+}
+.site-list__item {
+    text-align: center;
+
+    border-top: 1px solid $color-border;
+    &:last-child {
+        border-bottom: 1px solid $color-border;
+    }
+}
+.site-list__item-link {
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: $color-title;
+
+    display: block;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    &:hover {
+        color: $color-title-hover;
+    }
+    &:active {
+        color: $color-title-active;
+    }
+}
