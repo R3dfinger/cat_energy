@@ -25,3 +25,8 @@ html {
 *::after {
     box-sizing: inherit;
 }
+
+.container {
+    width: 100%;
+    padding: 0 20px;
+}

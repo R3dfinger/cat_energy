@@ -1,0 +1,50 @@
+.intro {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 304px;
+        background-color: #68b738;
+        background-image: url(../../img/index-background-mobile.jpg);
+        background-size:cover;
+        background-repeat: no-repeat;
+    }
+    
+
+}
+.intro__text {
+    padding-top: 25px;
+    padding-left: 17px;
+    padding-right: 17px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #fff;
+    
+}
+
+.intro__title {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 42px;
+
+    margin: 0;
+    margin-bottom: 20px;
+}
+.intro__slogan {
+    margin: 0;
+    margin-bottom: 30px;
+}
+.intro__img {
+    margin-bottom: 3px;
+}
+
+.intro__link {
+    width: 100%;
+}

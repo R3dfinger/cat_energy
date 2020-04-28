@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -8,46 +9,52 @@
     <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
     <header class="page-header">
         <div class="page-header__wrapper">
             <a class="page-header__logo">
                 <picture>
                     <source media="(min-width: 768px)" srcset="img/svg/logo-tablet.svg">
-                    <img class="page-header__logo-img" src="img/svg/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+                    <img class="page-header__logo-img" src="img/svg/logo-mobile.svg" width="33" height="38"
+                        alt="Логотип Cat Energy">
                 </picture>
-                <img class="page-header__logo-text" src="img/svg/logo-text-header.svg" width="101" height="18" alt="Текст логотипа">
+                <img class="page-header__logo-text" src="img/svg/logo-text-header.svg" width="101" height="18"
+                    alt="Текст логотипа">
             </a>
-            <nav class="main-nav main-nav--closed main-nav--no-js">
-                <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-                <ul class="main-nav__list site-list">
-                    <li class="site-list__item site-list__item--active">
-                        <a class="site-list__item-link">Главная</a>
-                    </li>
-                    <li class="site-list__item">
-                        <a class="site-list__item-link" href="catalog.html">Каталог продукции</a>
-                    </li>
-                    <li class="site-list__item">
-                        <a class="site-list__item-link" href="programm.html">Подбор программы</a>
-                    </li>
-                </ul>
-            </nav>
         </div>
+        <nav class="main-nav main-nav--closed main-nav--no-js">
+            <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+            <ul class="main-nav__list site-list">
+                <li class="site-list__item site-list__item--active">
+                    <a class="site-list__item-link">Главная</a>
+                </li>
+                <li class="site-list__item">
+                    <a class="site-list__item-link" href="catalog.html">Каталог продукции</a>
+                </li>
+                <li class="site-list__item">
+                    <a class="site-list__item-link" href="programm.html">Подбор программы</a>
+                </li>
+            </ul>
+        </nav>
+
         <section class="page-header__intro intro">
-               <div class="intro__wrapper container">
-                    <div class="intro__text">
-                        <h1 class="intro__title">Функциональное питание для котов</h1>
-                        <p class="intro__slogan">Занялся собой? Займись котом!</p>
-                    </div>
-                    <picture>
-                        <img class="intro__img" src="img/index-can-mobile.png.png" srcset="img/index-can-mobile.png@2x.png 2x" alt="Корм для кошки">
-                    </picture>
-                    <div class="intro__link-block">
-                        <a class="intro__link button" href="programm.html">Подобрать программу</a>
-                    </div>
-               </div>    
+            <div class="intro__wrapper container">
+                <div class="intro__text">
+                    <h1 class="intro__title">Функциональное питание для котов</h1>
+                    <p class="intro__slogan">Занялся собой? Займись котом!</p>
+                </div>
+                <picture>
+                    <img class="intro__img" src="img/index-can-mobile.png.png"
+                        srcset="img/index-can-mobile.png@2x.png 2x" alt="Корм для кошки">
+                </picture>
+            </div>
+            <div class="intro__link-block">
+                <a class="intro__link button" href="programm.html">Подобрать программу</a>
+            </div>
         </section>
     </header>
     <script src="js/script.js"></script>
 </body>
+
 </html>
