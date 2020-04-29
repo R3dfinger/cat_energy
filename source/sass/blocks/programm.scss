@@ -1,0 +1,55 @@
+.programm .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    background-color:#f2f2f2;
+}
+
+.programm__slim {
+    margin-bottom: 20px;
+}
+
+.programm__icon {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+    border-radius: 50%;
+    background-color: #68b738;
+    &--slim::after {
+        content: "";
+        position: absolute;
+        top: -3px;
+        right: 8px;
+        width: 35px;
+        height: 49px;
+        background-image: url(../../img/svg/cat-bg.svg);
+        transform: scale(-1, 1);
+    }
+    &--pro::after {
+        content: "";
+        position: absolute;
+        top: 12px;
+        left: -12px;
+        width: 67px;
+        height: 28px;
+        background-image: url(../../img/svg/puma-bg.svg);
+    }
+    
+}
+
+.programm__title {
+    margin: 0;
+    margin-left: 20px;
+
+    color: $color-title;
+    font-size: 24px;
+    line-height: 37px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
