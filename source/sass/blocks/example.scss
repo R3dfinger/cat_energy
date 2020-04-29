@@ -1,0 +1,14 @@
+.example {
+    background-color: #f2f2f2;  
+    padding-top: 20px;  
+}
+.example__title {
+    @include title-text;
+    color: $color-title;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.example__text {
+    font-family: $second-font;
+    padding-right: 15px;
+}

@@ -1,9 +1,11 @@
+.programm {
+    margin-bottom: 20px;
+}
 .programm .container {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     padding-top: 25px;
-    padding-bottom: 20px;
     margin-left: 20px;
     margin-right: 20px;
 
@@ -15,6 +17,7 @@
 }
 
 .programm__icon {
+    
     position: relative;
     width: 50px;
     height: 50px;
@@ -46,10 +49,52 @@
 .programm__title {
     margin: 0;
     margin-left: 20px;
+    
 
     color: $color-title;
     font-size: 24px;
     line-height: 37px;
     text-transform: uppercase;
     font-weight: 400;
+}
+
+.programm__text {
+    font-family: $second-font;
+    padding-bottom: 20px;
+    margin: 0;
+    margin-top: 23px;
+    
+
+    border-bottom: 1px solid $color-border;
+}
+.programm__link {
+    position: relative;
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 44px;
+    font-size: 16px;
+    line-height: 16px;
+    color: $color-title;
+    text-transform: uppercase;
+    text-decoration: none;
+    &::after {
+        content: '';
+        position: absolute;
+        right: 9px;
+        top: 22px;
+        width: 24px;
+        height: 11px;
+
+        background-image: url(../../img/svg/arrow-right.svg);
+    }
+    &:hover::after {
+        width: 33px;
+        right: 0px;
+        background-image: url(../../img/svg/arrow-right-long.svg);
+        background-repeat: no-repeat;
+    }
+    &:active {
+        opacity: 0.3;
+    }
 }
