@@ -12,3 +12,48 @@
     font-family: $second-font;
     padding-right: 15px;
 }
+
+.example__stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.example__list {
+    // width: 125px;
+    width: 40%;
+    text-align: center;
+}
+
+.example__value {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border: 1px solid $color-border;
+    border-radius: 4px;
+
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: $color-title;
+}
+.example__description {
+    display: inline-block;
+    font-family: $second-font;
+    font-size: 12px;
+    line-height: 12px;
+    width: 90px;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color:#f2f2f2;
+    transform: translateY(-10px);
+}
+
+.example__cost {
+    margin: 0;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+    color: $color-title;
+    line-height: 20px;
+    text-transform: uppercase;
+}
