@@ -1,0 +1,23 @@
+.contact__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 27px;
+    padding-bottom: 27px;
+}
+.contact__text {
+    width: 50%;
+    padding-right: 15px;
+    margin: 0;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $color-title;
+    
+}
+
+.contact__adress {
+    width: 50%;
+    margin: 0;
+    font-family: $second-font;
+    line-height: 20px;
+}

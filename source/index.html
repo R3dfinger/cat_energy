@@ -140,10 +140,10 @@
                     <p class="example__cost">затраты на питание: 15 000 руб.</p>
                 </div>
                 <div class="example__slider slider">
-                    <input class="slider__input slider__input--before" type="radio" name="cat" id="cat-before">
-                    <input class="slider__input slider__input--after" type="radio" name="cat" id="cat-after">
+                    <input class="visually-hidden slider__input--before" type="radio" name="cat" id="cat-before" checked>
+                    <input class="visually-hidden slider__input--after" type="radio" name="cat" id="cat-after">
                     <div class="slider__items">
-                        <div class="slider__item slider__item--before">
+                        <div class="slider__item slider__item--before" id="slide1">
                             <picture>
                                 <img class="slider__img" src="img/before-mobile.png" srcset="img/before-mobile@2x.png 2x" alt="Кот до">
                             </picture>
@@ -157,14 +157,26 @@
                     <div class="slider__controls">
                         <label class="slider__control slider__control--before" for="cat-before">было</label>
                         <div class="slider__bar">
-                            
+                            <span class="slider__bar-scale"></span>
                         </div>
                         <label class="slider__control slider__control--after" for="cat-after">стало</label>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2 class="visually-hidden">Где мы находимся и карта</h2>
+            <div class="contact__wrapper container">
+                <p class="contact__text">приглашаем к сотрудничеству дилеров!</p>
+                <p class="contact__adress">ул. Большая<br> Конюшенная, д. 19/8 
+                    Санкт-Петербург</p>
+            </div>
+            <div class="contact__map">
                 
             </div>
         </section>
+
     </main>
     <script src="js/script.js"></script>
 </body>
