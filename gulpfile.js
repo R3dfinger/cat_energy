@@ -73,13 +73,13 @@ gulp.task("html", function () {
 });
 // ДЕЛАЕМ SVG СПРАЙТ
 gulp.task("sprite", function() {
-  return gulp.src("source/img/proj-img/svg/ic-*.svg")
+  return gulp.src("source/img/svg/ic-*.svg")
   .pipe(svgstore({
-    // inlineSvg: true
+    inlineSvg: true
   }))
   .pipe(rename("sprite-ic.svg"))
-  .pipe(gulp.dest("build/img/proj-img"))
-  .pipe(gulp.dest("source/img/proj-img"));
+  .pipe(gulp.dest("build/img/"))
+  .pipe(gulp.dest("source/img"));
 });
 
 gulp.task("server", function () {
