@@ -1,0 +1,23 @@
+.social__list {
+    @include list-reset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $color-border;
+    border-left: none;
+    border-right: none;
+}
+.social__link {
+    display: block;
+    padding: 30px 20px;
+    font-size: 0;
+    fill: #666666;
+    &:hover svg {
+        fill: $color-bg-icon;
+    }
+    &:active svg {
+        fill: $color-bg-icon;
+        opacity: 0.6;
+    }
+}
+

@@ -1,0 +1,24 @@
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+
+.copyright__title {
+    font-family: $second-font;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+}
+.copyright__icon {
+    fill: #666666;
+    &:hover {
+        fill: $color-bg-icon;
+    }
+    &:active {
+        fill: $color-bg-icon;
+        opacity: 0.4;
+    }
+}
