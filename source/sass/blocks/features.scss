@@ -57,3 +57,50 @@
     font-family: $second-font;
     margin-left: 20px;
 }
+
+@media (min-width: $tablet-width) {
+    .features__wrapper {
+        padding-top: 30px;
+    }
+    
+    .features__title {
+        font-size: 60px;
+        line-height: 60px;
+        margin-bottom: 60px;
+    }
+    .features__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        counter-reset: item_number;
+    }
+    .features__item {
+        position: relative;
+        width: 324px;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 130px;
+        counter-increment: item_number;
+        z-index: 1;
+        &::after {
+            position: absolute;
+            content: counter(item_number);
+            top: 88px;
+            left: 100px;
+            z-index: -1;
+            font-size: 281px;
+            color: #f2f2f2;
+        }
+    }
+    .features__icon {
+        margin-bottom: 30px;
+    }
+    .features__text {
+        margin-left: 0;
+        margin-top: 0;
+        padding-right: 95px;
+
+        font-size: 16px;
+        line-height: 24px;
+    }
+}

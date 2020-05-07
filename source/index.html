@@ -144,7 +144,7 @@
                         <div class="example__value">60 дней</div>
                         <div class="example__description">затрачено времени</div>
                     </div>
-                    <p class="example__cost">затраты на питание: 15 000 руб.</p>
+                    <p class="example__cost">затраты на питание: <br>15 000 руб.</p>
                 </div>
                 <div class="example__slider slider">
                     <input class="visually-hidden slider__input--before" type="radio" name="cat" id="cat-before"
@@ -153,12 +153,14 @@
                     <div class="slider__items">
                         <div class="slider__item slider__item--before" id="slide1">
                             <picture>
+                                <source media="(min-width: 768px)" srcset="img/before-desktop.png.png 1x, img/before-desktop.png@2x.png 2x">
                                 <img class="slider__img" src="img/before-mobile.png"
                                     srcset="img/before-mobile@2x.png 2x" alt="Кот до">
                             </picture>
                         </div>
                         <div class="slider__item slider__item--after">
                             <picture>
+                                <source media="(min-width: 768px)" srcset="img/after-desktop.png.png 1x, img/after-desktop.png@2x.png 2x">
                                 <img class="slider__img" src="img/after-mobile.png" srcset="img/after-mobile@2x.png 2x"
                                     alt="Кот после">
                             </picture>

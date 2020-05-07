@@ -26,18 +26,20 @@
     &--slim::after {
         content: "";
         position: absolute;
-        top: -3px;
-        right: 8px;
+        top: 50%;
+        left: 50%;
+        
         width: 35px;
         height: 49px;
         background-image: url(../../img/svg/cat-bg.svg);
-        transform: scale(-1, 1);
+        transform: translate(-50%, -50%) scale(-1, 1);
     }
     &--pro::after {
         content: "";
         position: absolute;
-        top: 12px;
-        left: -12px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         width: 67px;
         height: 28px;
         background-image: url(../../img/svg/puma-bg.svg);
@@ -100,20 +102,58 @@
 
 @media (min-width: $tablet-width) {
     .programm__item {
+        min-height: 370px;
         padding-left: 50px;
         padding-right: 280px;
         position: relative;
         margin-left: auto;
         margin-right: auto;
+        padding-top: 80px;
     }
+    .programm__slim {
+        margin-bottom: 30px;
+    }
+    
     .programm__title {
         margin: 0;
+        font-size: 36px;
+        line-height: 37px;
     }
     .programm__text {
         border: none;
+        padding-bottom: 35px;
+
+        font-size: 16px;
+        line-height: 24px;
     }
     .programm__icon {
         position: absolute;
-        right: 0;
+        right: 60px;
+        top: 90px;
+
+        width: 200px;
+        height: 200px;
+        &--slim::after {
+            width: 140px;
+            height: 194px;
+            transform: translate(-50%, -58%) scale(-1, 1);
+        }
+        &--pro::after {
+            width: 269px;
+            height: 112px;
+        }
+    }
+    .programm__wrapper-link {
+        padding-bottom: 40px;
+        
+    }
+    .programm__link {
+        font-size: 20px;
+        line-height: 20px;
+        padding-right: 66px;
+        &::after {
+            right: 13px;
+            top: 24px;
+        }
     }
 }
