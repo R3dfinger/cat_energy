@@ -51,3 +51,47 @@
 .intro__link {
     width: 100%;
 }
+
+@media (min-width: $tablet-width) {
+    .intro {
+        text-align: left;
+        min-height: 860px;
+        &::before {
+            display: none;
+        }
+    }
+    .intro__wrapper {
+        padding: 0 30px;
+    }
+    .intro__text {
+        width: 547px;
+        padding-left: 90px;
+        text-align: left;
+        color: $color-title;
+    }
+
+    .intro__title {
+        @include text(60px, 60px, 400);
+        text-transform: none;
+        margin-bottom: 30px;
+    }
+    .intro__slogan {
+        @include text(20px, 20px, 400);
+        margin-bottom: 15px;
+    }
+    .intro__img {
+        position: absolute;
+        left: 50%;
+        margin-left: -350px;
+        z-index: -1;
+    }
+    .intro__link {
+        width: 245px;
+        text-align: center;
+        margin-left: 90px;
+        margin-top: 30px;
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+}
