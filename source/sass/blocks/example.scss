@@ -174,4 +174,20 @@
         }
     }
 
+    .slider__items {
+        min-height: 520px;
+    }
+
+    .slider__item img {
+        height: auto;
+    }
+
+    .slider__item--before {
+        position: absolute;
+        width: 50%;
+        overflow: hidden;
+    }
+    .slider__item--after {
+        display: block;
+    }
 }
