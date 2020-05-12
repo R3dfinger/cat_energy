@@ -21,3 +21,24 @@
     }
 }
 
+@media (min-width: $tablet-width) {
+    .social__list {
+        border: none;
+    }
+    .social__link-icon {
+        &--vk {
+            width: 30px;
+            height: 16px;
+        }
+        &--insta {
+            width: 23px;
+            height: 23px;
+        }
+        &--fb {
+            width: 14px;
+            height: 28px;
+        }
+        
+    }
+    
+}

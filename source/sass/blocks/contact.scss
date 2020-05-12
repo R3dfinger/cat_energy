@@ -21,3 +21,16 @@
     font-family: $second-font;
     line-height: 20px;
 }
+
+@media (min-width: $tablet-width) {
+    .contact__wrapper {
+        justify-content: space-around;
+    }
+    .contact__text {
+        width: 190px;
+    }
+    .contact__adress {
+        width: 170px;
+        text-align: right;
+    }
+}

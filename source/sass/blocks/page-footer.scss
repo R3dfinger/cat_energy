@@ -13,3 +13,18 @@
         opacity: 0.4;
     }
 }
+
+@media (min-width: $tablet-width) {
+    .page-footer__wrapper {
+        display: flex;
+        // justify-content: space-between;
+        align-items: center;
+        padding-left: 30px;
+        padding-right: 30px;
+
+        min-height: 150px;
+    }
+    .page-footer__logo {
+        padding: 0;
+    }
+}
