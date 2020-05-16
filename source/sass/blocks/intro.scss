@@ -95,3 +95,37 @@
     }
 
 }
+
+@media (min-width: $desktop-width) {
+    .intro {
+        min-height: 590px;
+        margin-bottom: 80px;
+        &::before {
+            display: block;
+            left: auto;
+            right: 0;
+            top: -111px;
+            width: 720px;
+            height: 698px;
+            
+
+            background-image: url(../../img/index-background-desktop.jpg.jpg);
+            @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+                background-image: url(../../img/index-background-desktop.jpg@2x.jpg);
+            }
+            
+        }
+    }
+    .intro__text {
+        padding-left: 80px;
+    }
+    .intro__img {
+        top: 20px;
+        left: auto;
+        bottom: auto;
+        right: 328px;
+    }
+    .intro__link {
+        margin-left: 80px;
+    }
+}

@@ -157,3 +157,16 @@
         }
     }
 }
+
+@media (min-width: $desktop-width) {
+    .programm {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 110px;
+        padding-right: 110px;
+    }
+    .programm__item {
+        width: 570px;
+        margin: 0;
+    }
+}

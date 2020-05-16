@@ -54,3 +54,16 @@
         display: none;
     }
 }
+
+@media (min-width: $desktop-width) {
+    .page-header {
+        padding-top: 45px;
+    }
+    .page-header__index {
+        padding: 0 110px;
+    }
+    .page-header__logo-img {
+        width: 202px;
+        height: 59px;
+    }
+}

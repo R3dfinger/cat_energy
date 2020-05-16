@@ -52,3 +52,14 @@
         }
     }
 }
+
+@media (min-width: $desktop-width) {
+    .site-list__item-link {
+        font-size: 20px;
+        color: #fff;
+
+        &--active {
+            border-color: #fff;
+        }
+    }
+}
