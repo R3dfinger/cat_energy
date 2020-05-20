@@ -164,9 +164,28 @@
         justify-content: space-between;
         padding-left: 110px;
         padding-right: 110px;
+        width: 1300px;
     }
     .programm__item {
         width: 570px;
         margin: 0;
+        padding-right: 50px;
+        outline: 1px solid black;
+    }
+    .programm__icon {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        
+        &--slim::after {
+            width: 70px;
+            height: 97px;
+        }
+        &--pro::after {
+            width: 135px;
+            height: 56px;
+        }
     }
 }
