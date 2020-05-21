@@ -161,16 +161,22 @@
 @media (min-width: $desktop-width) {
     .programm {
         display: flex;
-        justify-content: space-between;
-        padding-left: 110px;
-        padding-right: 110px;
-        width: 1300px;
+        width: 1220px;
+        margin: 0 auto;
     }
     .programm__item {
         width: 570px;
         margin: 0;
         padding-right: 50px;
-        outline: 1px solid black;
+    }
+    .programm__slim {
+        margin-right: 80px;
+    }
+    .programm__title {
+        padding-left: 64px;
+    }
+    .programm__text {
+        margin-top: 40px;
     }
     .programm__icon {
         width: 100px;
