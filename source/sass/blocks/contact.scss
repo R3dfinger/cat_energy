@@ -28,9 +28,37 @@
     }
     .contact__text {
         width: 190px;
+        font-size: 20px;
+        line-height: 25px;
     }
     .contact__adress {
         width: 170px;
         text-align: right;
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+@media (min-width: $desktop-width) {
+    .contact {
+        position: relative;
+    }
+    .contact__wrapper {
+        position: absolute;
+        left: 8%;
+        top: 120px;
+        background-color: #fff;
+        width: 570px;
+        height: 200px;
+        padding-top: 65px;
+        padding-right: 90px;
+        padding-left: 75px;
+    }
+    .contact__text {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .contact__adress {
+        text-align: left;
+        margin-left: 80px;
     }
 }

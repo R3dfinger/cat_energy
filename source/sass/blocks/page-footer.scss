@@ -28,3 +28,11 @@
         padding: 0;
     }
 }
+
+@media (min-width: $desktop-width) {
+    .page-footer__wrapper {
+        width: 1220px;
+        margin: 0 auto;
+        padding: 0;
+    }
+}
