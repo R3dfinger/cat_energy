@@ -1,0 +1,124 @@
+.form__inner fieldset {
+    border: none;
+    font-size: 16px;
+    line-height: 18px;
+    font-family: $font;    
+}
+.form__inner-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.form__inner-wrapper label {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+.form__inner-input {
+    flex-grow: 1;
+
+    margin-left: 15px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+
+    border: none;
+    border: 1px solid $color-input;
+
+    color: $color-text;
+    &:hover {
+        border-color: $color-input-hover;
+    }
+    &:active {
+        border-color: $color-text;
+    }
+}
+
+.form__inner-programm {
+    position: relative;
+    padding-left: 45px;
+}
+.form__inner-checkbox-wrap {
+    position: absolute;
+    left: 0;
+
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #cecece;
+    &::after {
+            content: '';
+            position: absolute;
+
+            display: none;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+    
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+    
+            background-color: $color-bg-icon;
+        }
+}
+
+.form__inner-checkbox:checked+span::after {
+    display: block;
+}     
+
+.form__inner legend {
+    position: relative;
+    font-size: 24px;
+    line-height: 24px;
+    color: $color-title;
+    
+    &::after {
+        content: '';
+        position: absolute;
+        margin-left: 22px;
+        top: 50%;
+        width: 100%;
+        height: 3px;
+        background-color: $color-bg-icon;
+        
+    }
+}
+
+.form__inner-textarea {
+    width: 100%;
+    padding-top: 14px;
+    padding-left: 15px;
+}
+.form__inner-add-label {
+    padding-left: 45px;
+    position: relative;
+}
+
+.form__inner-add-radio {
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #cfcfcf;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        width: 21px;
+        height: 16px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        display: none;
+
+        background-image: url(../../img/svg/check.svg);
+        background-repeat: no-repeat;
+    }
+}
+.form__inner-add-label input:checked+.form__inner-add-radio::before {
+    display: block;
+}
