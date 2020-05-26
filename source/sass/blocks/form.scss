@@ -7,6 +7,15 @@
 .form__inner-wrapper {
     display: flex;
     flex-direction: column;
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100vh;
+        height: 1px;
+        background-color: black;
+        left: -20px;
+    }
 }
 .form__inner-wrapper label {
     width: 100%;
@@ -39,6 +48,7 @@
 .form__inner-programm {
     position: relative;
     padding-left: 45px;
+    padding-bottom: 13px;
 }
 .form__inner-checkbox-wrap {
     position: absolute;
@@ -80,7 +90,7 @@
         position: absolute;
         margin-left: 22px;
         top: 50%;
-        width: 100%;
+        width: 100vh;
         height: 3px;
         background-color: $color-bg-icon;
         
