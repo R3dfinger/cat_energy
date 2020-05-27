@@ -51,23 +51,24 @@
         <section class="page-inner__form form container">
             <h2 class="visually-hidden">Анкета вашего кота</h2>
             <p class="form__describe">
-                Заполните анкету и мы подберем
+                Заполните анкету и мы подберем<br>
                 программу питания для вашего кота
             </p>
 
             <form class="form__inner" action="https://echo.htmlacademy.ru" method="GET">
 
                 <fieldset>
-                    <div class="form__inner-wrapper">
-                        <legend class="visually-hidden">форма о данных вашего кота</legend>
+                    <!-- <div class="form__inner-wrapper"> -->
+                    <legend class="visually-hidden">форма о данных вашего кота</legend>
+                    <div class="form__inner-wrapper form__inner-wrapper--line">
                         <label class="form__inner-name">Имя:*
                             <input class="form__inner-input" type="text" name="cat-name" placeholder="Барсик">
                         </label>
-    
+
                         <label class="form__cat-name">Вес (кг):*
                             <input class="form__inner-input" type="text" name="weight" placeholder="7">
                         </label>
-    
+
                         <label class="form__cat-name">Возраст (лет):
                             <input class="form__inner-input" type="text" name="old" placeholder="7">
                         </label>
@@ -75,20 +76,23 @@
                 </fieldset>
 
                 <fieldset>
-                    <div class="form__inner-wrapper">
-                        <legend class="visually-hidden">Направление питания</legend>
+                    <!-- <div class="form__inner-wrapper"> -->
+                    <legend class="visually-hidden">Направление питания</legend>
+                    <div class="form__inner-wrapper form__inner-wrapper--line">
                         <label class="form__inner-programm">
-                            <input class="form__inner-checkbox visually-hidden" type="radio" value="slim" name="programm">
-                            <span class="form__inner-checkbox-wrap"></span>
+                            <input class="form__inner-checkbox visually-hidden" type="radio" value="slim"
+                                name="programm">
+                            <span tabindex="0" class="form__inner-checkbox-wrap"></span>
                             Похудение
                         </label>
-    
+
                         <label class="form__inner-programm">
-                            <input class="form__inner-checkbox visually-hidden" type="radio" value="fat" name="programm">
-                            <span class="form__inner-checkbox-wrap"></span>
+                            <input class="form__inner-checkbox visually-hidden" type="radio" value="fat"
+                                name="programm">
+                            <span  class="form__inner-checkbox-wrap"></span>
                             Набор массы
                         </label>
-    
+
                         <label class="form__inner-programm">
                             <input class="form__inner-checkbox visually-hidden" type="radio" value="hz" name="programm">
                             <span class="form__inner-checkbox-wrap"></span>
@@ -98,12 +102,14 @@
                 </fieldset>
 
                 <fieldset>
+                    <!-- <div class="form__inner-wrapper"> -->
+                    <legend class="from__inner-about">Контактные данные <br>(владельца кота)</legend>
                     <div class="form__inner-wrapper">
-                        <legend class="from__inner-about">Контактные данные (владельца кота)</legend>
                         <label class="form__inner-about-label">E-mail:*
-                            <input class="form__inner-input" type="email" name="Email" placeholder="kuklachev@gmail.com">
+                            <input class="form__inner-input" type="email" name="Email"
+                                placeholder="kuklachev@gmail.com">
                         </label>
-    
+
                         <label class="form__inner-about-label">Телефон:*
                             <input class="form__inner-input" type="tel" name="number" placeholder="8 (960) 900-60-90">
                         </label>
@@ -113,31 +119,33 @@
 
                 <fieldset>
                     <legend class="form__inner-comment">Коментарии</legend>
-                    <textarea class="form__inner-textarea" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота" ></textarea>
+                    <textarea class="form__inner-textarea" cols="30" rows="10"
+                        placeholder="Расскажите обо всех повадках кота"></textarea>
                 </fieldset>
 
                 <fieldset>
-                    <div class="form__inner-wrapper">
-                        <legend class="form__inner-add">Дополнительно</legend>
-                        <label  class="form__inner-add-label">
+                    <!-- <div class="form__inner-wrapper"> -->
+                    <legend class="form__inner-add">Дополнительно</legend>
+                    <div class="form__inner-wrapper form__inner-wrapper--add">
+                        <label class="form__inner-add-label">
                             <input class="visually-hidden" type="checkbox" name="Sugar">
                             <span class="form__inner-add-radio"></span>
                             Сахарозаменитель
                         </label>
-    
-                        <label  class="form__inner-add-label">
+
+                        <label class="form__inner-add-label">
                             <input class="visually-hidden" type="checkbox" name="water">
                             <span class="form__inner-add-radio"></span>
                             Питьевая вода
                         </label>
-    
-                        <label  class="form__inner-add-label">
+
+                        <label class="form__inner-add-label">
                             <input class="visually-hidden" type="checkbox" name="Milk">
                             <span class="form__inner-add-radio"></span>
                             Молоко
                         </label>
-    
-                        <label  class="form__inner-add-label">
+
+                        <label class="form__inner-add-label">
                             <input class="visually-hidden" type="checkbox" name="Vitamin">
                             <span class="form__inner-add-radio"></span>
                             Витамины
@@ -145,15 +153,33 @@
                     </div>
                 </fieldset>
 
-                <p class="form__inner-button">
-                    <button class="form__inner-button-subscribe button" type="submit">Отправить заявку</button>
-                </p>
+                <div class="form__inner-button-wrap">
+                    <p class="form__inner-button">
+                        <button class="form__inner-button-subscribe button" type="submit">Отправить заявку</button>
+                    </p>
+                    <p class="form__inner-require">
+                        *- Обязательные поля
+                    </p>
+                </div>
 
             </form>
 
-            <p>
-                *- Обязательные поля
-            </p>
+            
+        </section>
+
+        <section class="contact">
+            <h2 class="visually-hidden">Где мы находимся и карта</h2>
+            <div class="contact__wrapper container">
+                <p class="contact__text">приглашаем к сотрудничеству дилеров!</p>
+                <p class="contact__adress">ул. Большая<br> Конюшенная, д. 19/8
+                    Санкт-Петербург</p>
+            </div>
+            <div class="contact__map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253056755!2d30.320853351737114!3d59.93871916896516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1588750140122!5m2!1sru!2sru"
+                    width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+            </div>
         </section>
     </main>
 
@@ -188,10 +214,10 @@
                 </ul>
             </div>
             <div class="page-footer__copyright container copyright">
-                    <b class="copyright__title">HTML Academy</b>
-                    <svg class="copyright__icon" width="60" height="60">
-                        <use xlink:href="#ic-html-academy"></use>
-                    </svg>
+                <b class="copyright__title">HTML Academy</b>
+                <svg class="copyright__icon" width="60" height="60">
+                    <use xlink:href="#ic-html-academy"></use>
+                </svg>
             </div>
         </div>
 

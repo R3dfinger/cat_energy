@@ -1,22 +1,37 @@
+.form__describe {
+    text-transform: uppercase;
+    margin-bottom: 38px;
+}
+
 .form__inner fieldset {
     border: none;
     font-size: 16px;
     line-height: 18px;
     font-family: $font;    
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 20px;
 }
 .form__inner-wrapper {
     display: flex;
     flex-direction: column;
+    position: relative;   
+}
+.form__inner-wrapper {
+    padding-bottom: 20px;
     position: relative;
-    &::after {
+}
+.form__inner-wrapper--line::after {
         content: '';
         position: absolute;
-        width: 100vh;
         height: 1px;
-        background-color: black;
+        width: 100vh;
+        background-color: #e6e6e6;
+
         left: -20px;
-    }
+        bottom: 0px;
 }
+
 .form__inner-wrapper label {
     width: 100%;
     display: flex;
@@ -24,6 +39,7 @@
     text-transform: uppercase;
     margin-bottom: 14px;
 }
+
 
 .form__inner-input {
     flex-grow: 1;
@@ -52,7 +68,7 @@
 }
 .form__inner-checkbox-wrap {
     position: absolute;
-    left: 0;
+    left: 0; 
 
     width: 30px;
     height: 30px;
@@ -84,6 +100,7 @@
     font-size: 24px;
     line-height: 24px;
     color: $color-title;
+    margin-bottom: 30px;
     
     &::after {
         content: '';
@@ -96,6 +113,10 @@
         
     }
 }
+.form__inner .from__inner-about::after {
+    top:30%;
+    margin-left: 50px;
+}
 
 .form__inner-textarea {
     width: 100%;
@@ -105,6 +126,15 @@
 .form__inner-add-label {
     padding-left: 45px;
     position: relative;
+    
+}
+.form .form__inner-add-label {
+    margin-bottom: 27px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    text-transform: uppercase;
 }
 
 .form__inner-add-radio {
@@ -131,4 +161,98 @@
 }
 .form__inner-add-label input:checked+.form__inner-add-radio::before {
     display: block;
+}
+
+.form__inner-button-subscribe {
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    line-height: 20px;
+}
+.form__inner-button {
+    margin-top: 10px;
+    margin-bottom: 22px;
+}
+.form__inner-require {
+    font-family: $second-font;
+    text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+    .form__describe {
+        font-size: 20px;
+        line-height: 30px;
+        padding-left: 40px;
+    }
+    .form__inner {
+        padding-left: 40px;
+    }
+    .form__inner fieldset {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .form__inner fieldset:nth-child(2) {
+        padding-top: 24px;
+        padding-left: 27px;
+        padding-bottom: 0;
+
+        margin-bottom: 70px;
+
+        border: 1px solid #e6e6e6;
+    }
+
+    .form__inner-wrapper--line::after {
+        display: none;
+    }
+    .form__inner legend {
+        font-size: 36px;
+        line-height: 36px;
+        margin-bottom: 65px;
+    }
+    .form__inner .from__inner-about::after {
+        top: 50%;
+    }
+    .form__inner legend::before {
+        content: '';
+        position: absolute;
+        height: 3px;
+        width: 100vh;
+
+        top: 50%;
+        left: -102vh;
+        background-color: $color-bg-icon;
+    }
+
+    .from__inner-about br {
+        display: none;
+    }
+
+    .form__inner-wrapper--add {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .form__inner .form__inner-add-label {
+        width: 50%;
+        padding-left: 60px;
+    }
+    .form__inner-add-radio {
+        width: 40px;
+        height: 40px;
+    }
+    .form__inner-button-wrap {
+        display: flex;
+        align-items: center;
+    }
+    .form__inner-button {
+        width: 283px;
+        margin-right: 60px;
+    }
+    .form__inner-button-subscribe {
+        font-size: 20px;
+    }
+    .form__inner-require {
+        font-size: 16px;
+        margin-top: -5px;
+    }
 }

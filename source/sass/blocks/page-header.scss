@@ -23,6 +23,21 @@
 .page-header__intro {
     width: 100%;
 }
+.page-header__title {
+    position: relative;
+    font-size: 36px;
+    line-height: 60px;
+    font-weight: 400;
+    &::after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        background-color: #e6e6e6;
+        top:-20px;
+        left: 0px;
+    }
+}
 
 @media (min-width: $tablet-width) {
     .page-header {
@@ -52,6 +67,12 @@
     
     .page-header__logo-text {
         display: none;
+    }
+    .page-header__title {
+        font-size: 60px;
+        &::after {
+            display: none;
+        }
     }
 }
 
