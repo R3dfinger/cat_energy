@@ -62,4 +62,14 @@
             border-color: #fff;
         }
     }
+    .page-inner .site-list__item-link {
+        color: black;
+
+        &--active {
+            border-color: $color-bg-icon
+        }
+        &:hover {
+            opacity: 0.8;
+        }
+    }
 }

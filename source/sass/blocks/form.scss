@@ -224,6 +224,10 @@ textarea::placeholder {
         background-color: $color-bg-icon;
     }
 
+    .form .form__inner-add-label {
+        margin-bottom: 50px;
+    }
+
     .from__inner-about br {
         display: none;
     }
@@ -255,4 +259,22 @@ textarea::placeholder {
         font-size: 16px;
         margin-top: -5px;
     }
+}
+
+@media (min-width: $desktop-width) {
+    .form__describe {
+        padding-left: 0px;
+        margin-bottom: 65px;
+    }
+    // .form__inner {
+    //     padding-left: 0;
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     justify-content: space-between;
+    //     align-items: center;
+    // }
+    // .form__inner .form__inner-wrapper--line {
+    //     width: 570px;
+    // }
+   
 }
