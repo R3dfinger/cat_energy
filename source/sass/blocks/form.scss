@@ -1,3 +1,5 @@
+
+
 .form__describe {
     text-transform: uppercase;
     margin-bottom: 38px;
@@ -21,15 +23,14 @@
     padding-bottom: 20px;
     position: relative;
 }
-.form__inner-wrapper--line::after {
+.form__inner-wrapper--line {
+    &::after {
         content: '';
-        position: absolute;
-        height: 1px;
-        width: 100vh;
-        background-color: #e6e6e6;
 
-        left: -20px;
-        bottom: 0px;
+        height: 1px;
+
+        background-color: #ededed
+    }
 }
 
 .form__inner-wrapper label {
@@ -96,26 +97,31 @@
 }     
 
 .form__inner legend {
+    display:block;
     position: relative;
     font-size: 24px;
-    line-height: 24px;
+    line-height: 26px;
     color: $color-title;
     margin-bottom: 30px;
-    
-    &::after {
-        content: '';
-        position: absolute;
-        margin-left: 22px;
-        top: 50%;
-        width: 100vh;
-        height: 3px;
-        background-color: $color-bg-icon;
-        
-    }
+    padding-right: px;
+
+
+        &::after {
+            content:'' ;
+            position: absolute;
+            width: 100vw;
+            top: 50%;
+            left: 130%;
+            height: 3px;
+            
+            background-color: $color-bg-icon;
+            
+            
+            
+        }
 }
 .form__inner .from__inner-about::after {
     top:30%;
-    margin-left: 50px;
 }
 
 .form__inner-textarea {
@@ -209,21 +215,25 @@ textarea::placeholder {
         font-size: 36px;
         line-height: 36px;
         margin-bottom: 65px;
+        &::before {
+            content:'' ;
+            position: absolute;
+            width: 100vw;
+            top: 50%;
+            
+            right: 110%;
+            height: 3px;
+
+            
+            background-color: $color-bg-icon;
+        }
+    
+
     }
     .form__inner .from__inner-about::after {
         top: 50%;
+        left: 110%;
     }
-    .form__inner legend::before {
-        content: '';
-        position: absolute;
-        height: 3px;
-        width: 100vh;
-
-        top: 50%;
-        left: -102vh;
-        background-color: $color-bg-icon;
-    }
-
     .form .form__inner-add-label {
         margin-bottom: 50px;
     }
@@ -266,15 +276,14 @@ textarea::placeholder {
         padding-left: 0px;
         margin-bottom: 65px;
     }
-    // .form__inner {
-    //     padding-left: 0;
-    //     display: flex;
-    //     flex-wrap: wrap;
-    //     justify-content: space-between;
-    //     align-items: center;
-    // }
-    // .form__inner .form__inner-wrapper--line {
-    //     width: 570px;
-    // }
-   
+    .form__inner {
+        padding-left: 0px;
+    }
+    .fieldset-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    .fieldset-wrapper fieldset {
+        width: 570px;
+    }
 }

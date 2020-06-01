@@ -57,52 +57,54 @@
 
             <form class="form__inner" action="https://echo.htmlacademy.ru" method="GET">
 
+                <div class="fieldset-wrapper">
+                    <fieldset>
+                        
+                        <legend class="visually-hidden">форма о данных вашего кота</legend>
+                        <div class="form__inner-wrapper form__inner-wrapper--line">
+                            <label class="form__inner-name">Имя:*
+                                <input class="form__inner-input" type="text" name="cat-name" placeholder="Барсик">
+                            </label>
+    
+                            <label class="form__cat-name">Вес (кг):*
+                                <input class="form__inner-input" type="text" name="weight" placeholder="7">
+                            </label>
+    
+                            <label class="form__cat-name">Возраст (лет):
+                                <input class="form__inner-input" type="text" name="old" placeholder="7">
+                            </label>
+                        </div>
+                    </fieldset>
+    
+                    <fieldset>
+                        
+                        <legend class="visually-hidden">Направление питания</legend>
+                        <div class="form__inner-wrapper form__inner-wrapper--line">
+                            <label class="form__inner-programm">
+                                <input class="form__inner-checkbox visually-hidden" type="radio" value="slim"
+                                    name="programm">
+                                <span tabindex="0" class="form__inner-checkbox-wrap"></span>
+                                Похудение
+                            </label>
+    
+                            <label class="form__inner-programm">
+                                <input class="form__inner-checkbox visually-hidden" type="radio" value="fat"
+                                    name="programm">
+                                <span  class="form__inner-checkbox-wrap"></span>
+                                Набор массы
+                            </label>
+    
+                            <label class="form__inner-programm">
+                                <input class="form__inner-checkbox visually-hidden" type="radio" value="hz" name="programm">
+                                <span class="form__inner-checkbox-wrap"></span>
+                                Не знаю (Нужен ваш совет)
+                            </label>
+                        </div>
+                    </fieldset>
+                </div>
+
                 <fieldset>
-                    <!-- <div class="form__inner-wrapper"> -->
-                    <legend class="visually-hidden">форма о данных вашего кота</legend>
-                    <div class="form__inner-wrapper form__inner-wrapper--line">
-                        <label class="form__inner-name">Имя:*
-                            <input class="form__inner-input" type="text" name="cat-name" placeholder="Барсик">
-                        </label>
-
-                        <label class="form__cat-name">Вес (кг):*
-                            <input class="form__inner-input" type="text" name="weight" placeholder="7">
-                        </label>
-
-                        <label class="form__cat-name">Возраст (лет):
-                            <input class="form__inner-input" type="text" name="old" placeholder="7">
-                        </label>
-                    </div>
-                </fieldset>
-
-                <fieldset>
-                    <!-- <div class="form__inner-wrapper"> -->
-                    <legend class="visually-hidden">Направление питания</legend>
-                    <div class="form__inner-wrapper form__inner-wrapper--line">
-                        <label class="form__inner-programm">
-                            <input class="form__inner-checkbox visually-hidden" type="radio" value="slim"
-                                name="programm">
-                            <span tabindex="0" class="form__inner-checkbox-wrap"></span>
-                            Похудение
-                        </label>
-
-                        <label class="form__inner-programm">
-                            <input class="form__inner-checkbox visually-hidden" type="radio" value="fat"
-                                name="programm">
-                            <span  class="form__inner-checkbox-wrap"></span>
-                            Набор массы
-                        </label>
-
-                        <label class="form__inner-programm">
-                            <input class="form__inner-checkbox visually-hidden" type="radio" value="hz" name="programm">
-                            <span class="form__inner-checkbox-wrap"></span>
-                            Не знаю (Нужен ваш совет)
-                        </label>
-                    </div>
-                </fieldset>
-
-                <fieldset>
-                    <!-- <div class="form__inner-wrapper"> -->
+                    
                     <legend class="from__inner-about">Контактные данные <br>(владельца кота)</legend>
                     <div class="form__inner-wrapper">
                         <label class="form__inner-about-label">E-mail:*
@@ -124,7 +126,7 @@
                 </fieldset>
 
                 <fieldset>
-                    <!-- <div class="form__inner-wrapper"> -->
+                    
                     <legend class="form__inner-add">Дополнительно</legend>
                     <div class="form__inner-wrapper form__inner-wrapper--add">
                         <label class="form__inner-add-label">
