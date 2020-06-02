@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Кэт энерджи программы</title>
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="page-inner">
+    <div style="display: none">
+        <include src="source/img/sprite-ic.svg"></include>
+    </div>
+    <header class="page-header">
+        <div class="page-header__index">
+            <div class="page-header__wrapper">
+                <a class="page-header__logo">
+                    <picture>
+                        <source media="(min-width: 1300px)" srcset="img/svg/logo-desktop.svg">
+                        <source media="(min-width: 768px)" srcset="img/svg/logo-tablet.svg">
+                        <img class="page-header__logo-img" src="img/svg/logo-mobile.svg" width="33" height="38"
+                            alt="Логотип Cat Energy">
+                    </picture>
+                    <img class="page-header__logo-text" src="img/svg/logo-text-header.svg" width="101" height="18"
+                        alt="Текст логотипа">
+                </a>
+            </div>
+            <nav class="main-nav main-nav--closed main-nav--no-js">
+                <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть
+                        меню</span></button>
+                <ul class="main-nav__list site-list">
+                    <li class="site-list__item site-list__item--active">
+                        <a class="site-list__item-link" href="index.html">Главная</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a class="site-list__item-link" href="catalog.html">Каталог продукции</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a class="site-list__item-link site-list__item-link--active">Подбор программы</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <h1 class="page-header__title container">Подбор программы</h1>
+    </header>
+    <main class="page-inner">
+        <section class="catalog">
+            <h2 class="visually-hidden">Каталог</h2>
+            <ul class="catalog__list">
+                <li class="catalog__item">
+                    <div class="catalog__image">
+                        <source media="(min-width:768px)" srcset=""><img src="img/catalog/">
+                        <img src="img/catalog/catalog-1-mobile.jpg.jpg" srcset="img/catalog/catalog-1-mobile.jpg@2x.jpg 2x"
+                            alt="price-1">
+                    </div>
+
+                    <div class="catalog__text">
+                        <h3 class="catalog__title">Cat Energy PRO
+                            <span>500 г</span>
+                        </h3>
+
+                        <table class="catalog__describe">
+                            <tr class="catalog__describe-row">
+                                <th class="catalog__describe-title">Объём</th>
+                                <td class="catalog__describe-value">500 г</td>
+                            </tr>
+                            <tr class="catalog__describe-row">
+                                <th class="catalog__describe-title">Вкус</th>
+                                <td class="catalog__describe-value">Курица</td>
+                            </tr>
+                            <tr class="catalog__describe-row">
+                                <th class="catalog__describe-title">Цена</th>
+                                <td class="catalog__describe-value">700 Р.</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <a class="catalog__button button">Заказать</a>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer class="page-footer">
+        <div class="page-footer__wrapper">
+            <div class="page-footer__logo">
+                <img src="img/svg/logo-footer.svg" width="128" height="24" alt="Логотип Cat_energy">
+            </div>
+            <div class="page-footer__social container social">
+                <ul class="social__list">
+                    <li class="social__item">
+                        <a class="social__link" href="#">Вк
+                            <svg class="social__link-icon social__link-icon--vk" width="22" height="12">
+                                <use xlink:href="#ic-vk"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link" href="#">Инста
+                            <svg class="social__link-icon social__link-icon--insta" width="16" height="16">
+                                <use xlink:href="#ic-insta"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link" href="#">Фейсбук
+                            <svg class="social__link-icon social__link-icon--fb" width="10" height="19">
+                                <use xlink:href="#ic-fb"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="page-footer__copyright container copyright">
+                <b class="copyright__title">HTML Academy</b>
+                <svg class="copyright__icon" width="60" height="60">
+                    <use xlink:href="#ic-html-academy"></use>
+                </svg>
+            </div>
+        </div>
+
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
