@@ -65,3 +65,134 @@
     font-size: 16px;
     line-height: 20px;
 }
+
+.products__stock {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../../img/catalog/gift-photo-desktop.jpg.jpg);
+    background-repeat: no-repeat;
+    background-size: 208px auto;
+    width: 280px;
+    min-height: 289px;
+    background-size: cover;
+    padding-top: 66px;
+    padding-left: 55px;
+    padding-right: 55px;
+    margin-bottom: 35px;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 55px;
+        height: 60px;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-image: url(../../img/catalog/gift.svg);
+
+    }
+    .products__text {
+        margin-top: 120px;
+    }
+    @media (min-resolution: $retina-dppx) {
+        background-image: url(../../img/catalog/gift-photo-mobile.jpg@2x.jpg);
+    }  
+}
+.products__text {
+    font-family: $second-font;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+}
+
+
+@media (min-width: $tablet-width) {
+    .products__title {
+        margin-bottom: 75px;
+        font-size: 36px;
+        line-height: 36px;
+    }
+    .products__item {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        padding-left: 38px;
+        padding-right: 38px;
+        padding-top: 27px;
+        padding-bottom: 27px;
+        border: 1px solid #e6e6e6;
+        &:last-child {
+            margin-bottom: 70px;
+        }
+    }
+    .products__name {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .products__describe {
+        display: flex;
+        width: 50%;
+        margin-bottom: 25px;
+    }
+    .products__amount {
+        margin-left: auto;
+        font-size: 16px;
+        line-height: 20px;
+        
+    }
+    .products__cost {
+        width: 95px;
+        text-align: right;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .products__stock {
+        width: 100%;
+
+        background-image: url(../../img/catalog/gift-photo-tablet.jpg.jpg);
+        background-size: 708px auto;
+        padding: 0;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .products__list {
+        width: 895px;
+    }
+
+    .products__item {
+        padding: 0;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        align-items: center;
+
+        border: none;
+        border-top: 1px solid #cdcdcd;
+        &:last-child {
+            border-bottom: 1px solid #cdcdcd;
+        }
+    }
+
+    .products__name {
+        width: 285px;
+        margin: 0;
+    }
+    .products__describe {
+        width: 285px;
+        margin: 0;
+    }
+    .products__amount {
+        margin: 0;
+    }
+    .products__cost {
+        width: auto;
+    }
+    .products__button {
+        width: 245px;
+    }
+}
