@@ -1,25 +1,29 @@
+.products {
+    position: relative;
+    z-index: 2;
+}
+//ТУТ ХЕРНЯ С Z-INDEX
 .products__title {
     position: relative;
     display: inline-block;
     background-color: #fff;
-    padding-right: 40px;
+    padding-right: 30px;
     font-size: 24px;
     line-height: 24px;
     font-weight: 400;
     color: $color-title;
-    z-index: 2;
-        &::after {
+    
+        
+    &::after {
         content: '';
-        display: block;
         position: absolute;
-        top: 50%;
-        left: 0;
-        z-index: -2;
         width: 100vw;
+        top: 50%;
+        z-index: -1;
+        left: 0;
         height: 3px;
         background-color: $color-bg-icon;
-        
-    }
+    } 
 }
 
 .products__list {
@@ -122,6 +126,17 @@
         margin-bottom: 75px;
         font-size: 36px;
         line-height: 36px;
+        padding-left: 40px;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100vw;
+            top: 50%;
+            z-index: -1;
+            right: 0;
+            height: 3px;
+            background-color: $color-bg-icon;
+        }
     }
     .products__item {
         display: flex;
@@ -183,6 +198,9 @@
 
 
 @media (min-width: $desktop-width) {
+    .products__title {
+        margin-left: -40px;
+    }
     .products__wrapper {
         display: flex;
         justify-content: space-between;
